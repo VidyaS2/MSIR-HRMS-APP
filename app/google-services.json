@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "339608849851",
+    "firebase_url": "https://clock-me-320c1-default-rtdb.firebaseio.com",
+    "project_id": "clock-me-320c1",
+    "storage_bucket": "clock-me-320c1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339608849851:android:4fddd8c56fa89b2d33089e",
+        "android_client_info": {
+          "package_name": "com.attendance.clockme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd1gt2TItFtj6JfRKzXJzZMUdflGh_EcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

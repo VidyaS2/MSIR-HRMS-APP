@@ -1,0 +1,98 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="16dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="10dp"
+    android:background="@color/white">
+
+<TextView
+    android:id="@+id/text_username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Username"
+    android:textColor="@color/Black"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/text_position"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Black"
+    android:text="Position"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/text_email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Black"
+    android:text="Email"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/text_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Black"
+    android:text="Date: "
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/text_clockin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Black"
+    android:text="Clock-In Time: "
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/text_clockout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Black"
+    android:text="Clock-Out Time: "
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/text_remark"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Black"
+    android:text="Remark: "
+    android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/statusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:text="Status: "
+        android:textSize="14sp" />
+
+<!-- Edit Button -->
+<Button
+    android:id="@+id/button_edit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Edit"
+    android:layout_gravity="end"
+    android:backgroundTint="@color/colorPrimary"
+    android:textColor="@android:color/white"
+    android:padding="8dp"
+    android:layout_marginTop="10dp" />
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>

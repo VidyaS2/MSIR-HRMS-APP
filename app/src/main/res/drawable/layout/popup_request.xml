@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.5"
+    app:layout_constraintHorizontal_bias="0.5">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#FFFFFF">
+
+        <!-- Date Input EditText -->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="-1dp"
+            android:src="@drawable/close_icon"
+            android:id="@+id/close_icon"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="cursive"
+            android:padding="20dp"
+            android:text="Permission Request"
+            android:textAlignment="center"
+            android:textColor="#3C71B1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Date"
+            android:textColor="#3C71B1"
+            android:textColorHint="#3C71B1"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="7dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="date"
+            />
+        <EditText
+            android:id="@+id/hours"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="How Many Hours?"
+            android:textColor="#3C71B1"
+            android:textColorHint="#3C71B1"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="7dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="date"
+            />
+        <!-- From Time Input EditText -->
+        <EditText
+            android:id="@+id/input_from_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="From Time"
+            android:textColor="#3C71B1"
+            android:textColorHint="#3C71B1"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="7dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="time" />
+
+        <!-- To Time Input EditText -->
+        <EditText
+            android:id="@+id/input_to_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="To Time"
+            android:textColor="#3C71B1"
+            android:textColorHint="#3C71B1"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+            android:inputType="time" />
+        <EditText
+            android:id="@+id/input_to_reason"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Reason"
+            android:textColor="#3C71B1"
+            android:textColorHint="#3C71B1"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="7dp"
+            android:layout_marginBottom="7dp"
+            android:inputType="time" />
+        <!-- Request Button -->
+        <Button
+            android:id="@+id/requestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#3C71B1"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

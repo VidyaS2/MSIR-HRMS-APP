@@ -1,0 +1,114 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="50dp"
+    app:layout_constraintTop_toBottomOf="@id/headerLayout"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:cardCornerRadius="16dp"
+    android:background="@color/white"
+    app:cardElevation="4dp"
+    android:id="@+id/relieve_disappear">
+
+    <LinearLayout
+        android:id="@+id/relieveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="14sp"/>
+
+        <!-- Approve and Reject Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Approve"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/darkgreen"/>
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reject"
+                android:textColor="@color/white"
+                android:backgroundTint="#A80606"/>
+
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/btnDelete"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="51dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:adjustViewBounds="true"-->
+            <!--                android:background="?attr/selectableItemBackground"-->
+            <!--                android:contentDescription="Delete Request"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:scaleType="fitCenter"-->
+            <!--                android:src="@drawable/remove_icon" />-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

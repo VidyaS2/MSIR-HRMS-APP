@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MSIR HRMS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClockMe"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB575KMfMx6Wz_hFroOLBCi9lwnaFokLA4"/>
+
+<!--        <service-->
+<!--            android:name=".MyFirebaseMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_forgot_password"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="Dashboard"
+           />
+        <activity android:name=".ClockInOutActivity" />
+        <activity android:name=".SwipingTimeActivity"/>
+        <activity android:name=".SalaryDetailsActivity" />
+        <activity android:name=".ActivityAdminDashboard" />
+        <activity android:name=".ActivityAdminClockview" />
+        <activity android:name=".PopupPermissionActivity"/>
+        <activity android:name=".PopupLeaveActivity"/>
+        <activity android:name=".PopupRelieveActivity"/>
+        <activity android:name=".EmpRegActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ActivityClockInOutRemark" />
+        <activity android:name=".AdminRequestActivity" />
+        <activity android:name=".AdminLateActivity" />
+        <activity android:name=".ClockInOutEditActivity"/>
+        <activity android:name=".AdminPermissionRequest"/>
+        <activity android:name=".AdminLeaveRequest"/>
+        <activity android:name=".AdminRelieveActivity"/>
+        <activity android:name=".AdminDailyAttendanceActivity" />
+        <activity android:name=".AdminLateHistoryActivity" />
+        <activity android:name=".AdminPermissionHistoryActivity" />
+        <activity android:name=".AdminLeaveHistoryActivity" />
+        <activity android:name=".AdminRelieveHistoryActivity" />
+        <activity android:name=".ClientLeaveStatusActivity"/>
+        <activity android:name=".ClientPermissionStatusActivity"/>
+        <activity android:name=".ClientRelieveStatusActivity"/>
+        <activity android:name=".AdminHolidayDeclaration"/>
+        <activity android:name=".WeekCalendarActivity"/>
+        <activity android:name=".MonthlyCalendarActivity"/>
+        <activity android:name=".ClockInPermissionActivity"/>
+        <activity android:name=".ClockOutPermissionActivity"/>
+        <activity android:name=".AdminThreeDashboard"/>
+        <activity android:name=".AdminThreeRequests"/>
+        <activity android:name=".AdminThreePermissionOut"/>
+        <activity android:name=".EditInSwipeMissing" />
+        <activity android:name=".EditOutSwipeMissing" />
+        <activity android:name=".EditInPermissionForm" />
+        <activity android:name=".EditOutPermissionForm" />
+        <activity android:name=".AdminThreeEmployee" />
+        <activity android:name=".AdminThreeMonthCalendar" />
+        <activity android:name=".SuperAdminCalendar" />
+        <activity android:name=".TeamAttendanceActivity" />
+        <activity android:name=".ClientClockInPerm" />
+        <activity android:name=".CoffFormActivity" />
+        <activity android:name=".CoffHdOutFormActivity" />
+        <activity android:name=".AdminThreeCoffIn" />
+        <activity android:name=".AdminThreeCoffOut" />
+        <activity android:name=".FirebaseHelper" />
+        <activity android:name=".NotificationHelper" />
+        <receiver android:name=".ResetAlarmReceiver" />
+    </application>
+
+
+</manifest>

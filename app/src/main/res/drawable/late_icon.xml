@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Clock circle -->
+    <path
+        android:fillColor="#3C71B1"
+    android:pathData="M32,2a30,30 0,1 1,-0.001,60A30,30 0,1 1,32 2z"
+    android:strokeWidth="4"
+    android:strokeColor="#3C71B1"
+    android:fillAlpha="0"/>
+
+    <!-- Clock hands -->
+    <path
+        android:fillColor="#3C71B1"
+        android:pathData="M32,32 L32,16"
+        android:strokeWidth="4"
+        android:strokeColor="#3C71B1"
+        android:strokeLineCap="round"/>
+
+    <path
+        android:fillColor="#3C71B1"
+        android:pathData="M32,32 L44,32"
+        android:strokeWidth="4"
+        android:strokeColor="#3C71B1"
+        android:strokeLineCap="round"/>
+
+    <!-- Pencil body -->
+    <path
+        android:fillColor="#3C71B1"
+        android:pathData="M10,44 L32,44 L32,50 L10,50z"/>
+
+    <!-- Pencil tip -->
+    <path
+        android:fillColor="#3C71B1"
+        android:pathData="M32,44 L38,46 L32,50z"/>
+
+    <!-- Pencil eraser -->
+    <path
+        android:fillColor="#3C71B1"
+        android:pathData="M10,50 L15,50 L15,54 L10,54z"/>
+</vector>

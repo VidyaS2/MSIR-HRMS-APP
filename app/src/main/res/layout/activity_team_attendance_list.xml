@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Container for the table -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:background="@android:color/white">
+
+        <!-- Table Header -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#3C71B1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Staff Name"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clock In Time and Location"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clock Out Time and Location"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+
+        <!-- Dynamic Rows Container -->
+        <LinearLayout
+            android:id="@+id/dynamicRowContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </TableLayout>
+</ScrollView>

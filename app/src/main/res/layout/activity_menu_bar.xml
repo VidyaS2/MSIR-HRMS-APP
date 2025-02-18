@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Left half layout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"> <!-- White background -->
+
+
+    </LinearLayout>
+
+    <!-- Right half layout with blue background -->
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_width="0dp"
+        android:layout_height="700dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#3C71B1">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today Attendance"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Holiday Declaration"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

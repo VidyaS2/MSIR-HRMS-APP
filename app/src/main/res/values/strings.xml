@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/yourSelectedColor</item>-->
+<!--        <item name="colorPrimaryDark">@color/Black</item>-->
+<!--        <item name="colorAccent">@color/darkgray</item>-->
+
+    </style>
+
+    <style name="AppThemeNoActionbar" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!--    <style name="CalendarDateTextStyle" parent="TextAppearance.AppCompat.Large">-->
+    <!--        <item name="android:textColor">@android:color/black</item> &lt;!&ndash; Set text color to black &ndash;&gt;-->
+    <!--    </style>-->
+    <!-- Date Text Style -->
+    <style name="CalendarDateTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item> <!-- Default date color -->
+    </style>
+
+    <!-- Weekday Text Style -->
+    <style name="CalendarWeekTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3C71B1</item> <!-- Weekday color -->
+    </style>
+
+    <!-- Custom Calendar View Style -->
+    <style name="CustomCalendarView" parent="Theme.AppCompat.Light">
+        <item name="android:dateTextAppearance">@style/CalendarDateTextStyle</item>
+        <item name="android:weekDayTextAppearance">@style/CalendarWeekTextStyle</item>
+        <item name="android:focusedMonthDateColor">#000000</item>
+        <item name="android:unfocusedMonthDateColor">#999999</item>
+        <item name="android:selectedDateVerticalBar">@drawable/custom_date_selector</item>
+
+    </style>
+    <string-array name="team_array">
+        <item>Team 1</item>
+        <item>Team 2</item>
+        <item>Team 3</item>
+    </string-array>
+
+    <string name="channel_name">Permission Request Channel</string>
+    <string name="channel_description">Channel for permission request notifications</string>
+</resources>
